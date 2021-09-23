@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 
-// ¼±ÅÃÁ¤·Ä
-//Á¦ÀÚ¸® (in place) ¼±ÅÃÁ¤·Ä
+// ì„ íƒì •ë ¬
+//ì œìžë¦¬ (in place) ì„ íƒì •ë ¬
 /*
 int main()
 {
@@ -26,7 +26,7 @@ int main()
 			}
 		}
 
-		// °ª ±³È¯ ¿¬»ê
+		// ê°’ êµí™˜ ì—°ì‚°
 		tmp = *(arr + i);
 		*(arr + i) = *(arr + max);
 		*(arr + max) = tmp;
@@ -40,9 +40,8 @@ int main()
 */
 
 
-// ³»°¡ Ç¬ °Í! 100Á¡
+// ë‚´ê°€ í‘¼ ê²ƒ! 100ì 
 
-/*
 int main()
 {
 	int n, *arr, max;
@@ -56,10 +55,10 @@ int main()
 
 
 
-	for (int i = n-1; i > 0; i--) { // n-2 ¹ø ¼öÇà
-		max = i; // key °ª ÀúÀå
+	for (int i = n-1; i > 0; i--) { // n-2 ë²ˆ ìˆ˜í–‰
+		max = i; // key ê°’ ì €ìž¥
 
-		for (int j = i-1; j >= 0; j--) { // 0 ~ i-1 ±îÁö °Ë»ç
+		for (int j = i-1; j >= 0; j--) { // 0 ~ i-1 ê¹Œì§€ ê²€ì‚¬
 			if (arr[j] > arr[max])
 				max = j; 
 		}
@@ -75,4 +74,3 @@ int main()
 
 	free(arr);
 }
-*/
